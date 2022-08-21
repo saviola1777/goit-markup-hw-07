@@ -15,58 +15,43 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Хедер-->
-    <header class="header">
-      <!--header клас дла хедера-->
-      <div class="cointeiner cointeiner--header">
-        <nav class="nav">
-          <!--nav клас для навігації-->
-          <a class="nav__logo" href="#"
-            >Web<span class="nav__text">Studio</span></a
-          >
-          <ul class="nav__list">
-            <!--List - список-->
+<header class="header"> 
+<div class="cointeiner header__cointeiner"> 
+<nav class="nav"> 
+ <a class="logo" href="#">Web<span class="logo__text">Studio</span></a>
+    <ul class="nav__list"> 
+    
+    <li class="nav__item"><a href="./index.html" class="nav__link ">Студія</a></li>
+    <li class="nav__item"><a href="./portfolio.html" class="nav__link nav__link--current">Портфоліо</a></li>
+    <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
+    
+    </ul>
+</nav>
+    <ul class="contact">
+    
+        <li><a class="contact__link" href="mailto:info@devstudio.com" >
+        <svg class="contact__icon" width="16" height="12">
+        <use href="./images/icons.svg.svg#icon-envelope"></use>
+        </svg>
+        info@devstudio.com</a>
+        </li>
 
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link">Студія</a>
-            </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link nav__link--current"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contact">
-          <li>
-            <a class="contact__link" href="mailto:info@devstudio.com">
-              <svg class="contact__icon" width="16" height="12">
-                <use href="./images/icons.svg.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-
-          <li>
-            <a class="contact__link" href="tel:+380961111111">
-              <svg class="contact__icon" width="10" height="16">
-                <use href="./images/icons.svg.svg#icon-Vector"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
+        <li>
+        <a class="contact__link" href="tel:+380961111111" >
+        <svg class="contact__icon" width="10" height="16">
+        <use href="./images/icons.svg.svg#icon-Vector"></use>
+        </svg>
+        +38 096 111 11 11 </a>
+        </li>
+        </ul>   
+    </div> 
+</header>
     <!--Main-->
-    <main class="main-portfolio">
+    <main class="main__portfolio">
       <section class="section-portfolio">
         <div class="cointeiner">
           <div class="portfolio">
@@ -345,89 +330,74 @@
       </section>
     </main>
     <!--Футер-->
-    <footer class="footer">
-      <div class="cointeiner cointeiner--display-align">
-        <div class="address">
-          <a href="#" class="address__logo"
-            >Web<span class="address__span">Studio</span></a
-          >
-          <address class="address__addressing">
-            <ul class="address__list">
-              <li class="address__item">
-                <p class="address__text">м. Київ, пр-т Лесі Українки, 26</p>
-              </li>
-              <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="address__link"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="address__item">
-                <a href="tel:+380961111111" class="address__link">
-                  +38 096 111 11 11
-                </a>
-              </li>
-            </ul>
-          </address>
-        </div>
+<footer class="footer">
+    
+<div class="cointeiner footer__cointeiner">
+    <div class="address">
+    <a href="#" class="address__logo">Web<span class="address__span">Studio</span></a>
+    <address class="address__addressing">
+<ul class="address__list">
 
-        <div class="join">
-          <p class="join__text">приєднуйтесь</p>
-          <ul class="join__list">
-            <li class="join__items">
-              <a href="" class="join__link">
-                <svg class="join__icon" width="20" height="20">
-                  <use href="./images/icons.svg.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
+    <li class="address__item"><p class="address__text">м. Київ, пр-т Лесі Українки, 26</p></li>
+    <li class="address__item"><a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a></li>
+    <li class="address__item"><a href="tel:+380961111111" class="address__link"> +38 096 111 11 11 </a></li>
+    
+</ul>
+    </address>
+    </div>
 
-            <li class="join__items">
-              <a href="" class="join__link">
-                <svg class="join__icon" width="20" height="20">
-                  <use href="./images/icons.svg.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
+<div class="join">
+<p class="join__text">приєднуйтесь</p> 
+<ul class="join__list">        
+ <li class="join__items">
+     <a href="" class="join__link">
+    <svg class="join__icon" width="20" height="20">
+    <use href="./images/icons.svg.svg#icon-instagram" ></use>
+    </svg> 
+    </a>
+ </li>
 
-            <li class="join__items">
-              <a href="" class="join__link">
-                <svg class="join__icon" width="20" height="20">
-                  <use href="./images/icons.svg.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
+<li class="join__items">
+     <a href="" class="join__link">
+    <svg class="join__icon" width="20" height="20">
+    <use href="./images/icons.svg.svg#icon-twitter" ></use>
+    </svg> 
+    </a>
+</li>
 
-            <li class="join__items">
-              <a href="" class="join__link">
-                <svg class="join__icon" width="20" height="20">
-                  <use href="./images/icons.svg.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+<li class="join__items"> 
+    <a href="" class="join__link">
+    <svg class="join__icon" width="20" height="20">
+    <use href="./images/icons.svg.svg#icon-facebook" ></use>
+    </svg> 
+    </a>
+</li>
 
-        <div class="sing-up">
-          <form>
-            <label for="email" class="sing-up__label">
-              Підпишіться на розсилку</label
-            >
-            <input
-              type="email"
-              name="email"
-              placeholder="E-mail"
-              id="email"
-              class="sing-up__input"
-            /><button type="submit" class="sing-up__button">
-              <span class="sing-up__text">Підписатися</span>
-              <svg class="sing-up__icon" width="24" height="24">
-                <use href="./images/icons.svg.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
-      </div>
-    </footer>
+<li class="join__items">
+    <a href="" class="join__link">
+    <svg class="join__icon" width="20" height="20">
+    <use href="./images/icons.svg.svg#icon-linkedin" ></use>
+    </svg> 
+    </a>
+</li>
+</ul>
+</div>
+
+<div class="sing-up">
+    <form>
+        <label for="email"  class="sing-up__label"> Підпишіться на розсилку</label>
+        <input type="email" name="email" placeholder="E-mail" id="email" class="sing-up__input"><button type="submit" class="sing-up__button">
+        <span class="sing-up__text">Підписатися</span>
+    <svg class="sing-up__icon" width="24" height="24">
+    <use href="./images/icons.svg.svg#icon-send" ></use>
+    </svg> 
+    
+        </button>
+    </form>
+</div>
+
+</div>
+</footer>
 
     <script src="./js/modal.js"></script>
   </body>
