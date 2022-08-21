@@ -74,6 +74,33 @@
 &__textarea:focus {
     border: 1px solid var(--color-curennt)
 }
+&__button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: var(--color-curennt);
+    border-radius: 4px;
+    border: none;
+    margin: 0 auto;
+    padding: 10px 52px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+
+    transition-property: background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__button:hover,
+&__button:focus {
+    background-color: var(--color-hover-focus);
+}
 }
 
 
