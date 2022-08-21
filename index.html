@@ -13,11 +13,11 @@
 </head>
 <body> 
     <!--Шапка-->
-<header class="header"> <!--header клас дла хедера-->
-<div class="cointeiner cointeiner--header">
-<nav class="nav"> <!--nav клас для навігації-->
+<header class="header"> 
+<div class="cointeiner header__cointeiner"> 
+<nav class="nav"> 
  <a class="nav__logo" href="#">Web<span class="nav__text">Studio</span></a>
-    <ul class="nav__list"> <!--List - список-->
+    <ul class="nav__list"> 
     
     <li class="nav__item"><a href="./index.html" class="nav__link nav__link--current">Студія</a></li>
     <li class="nav__item"><a href="./portfolio.html" class="nav__link ">Портфоліо</a></li>
@@ -52,7 +52,7 @@
 
 <div class="cointeiner">
 <h1 class="section-service__title">Ефективні рішення для вашого бізнесу</h1>
-<button class="section-service__btn" type="button"  data-modal-open>Замовити послугу</button>
+<button class="btn" type="button"  data-modal-open>Замовити послугу</button>
 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal"> 
@@ -95,7 +95,7 @@
 <textarea class="modal-form__textarea"  name="textarea-text"  placeholder="Введіть текст"></textarea>
   
 <div class="checkbox">
-     <input class="checkbox__input checkbox__input--visually-hidden" id="checkbox-ticker" type="checkbox" name="checkbox"  >
+     <input class="checkbox__input visually-hidden" id="checkbox-ticker" type="checkbox" name="checkbox"  >
      <label  for="checkbox-ticker" class="checkbox__labela" >
 <span class="checkbox__span">
     <svg class="checkbox__tick" width="16" height="15">
